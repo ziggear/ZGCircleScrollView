@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		070FAD201A0388550016EC68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 070FAD171A0388550016EC68 /* AppDelegate.m */; };
 		070FAD211A0388550016EC68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070FAD181A0388550016EC68 /* Images.xcassets */; };
-		070FAD221A0388550016EC68 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 070FAD191A0388550016EC68 /* Info.plist */; };
 		070FAD231A0388550016EC68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 070FAD1A1A0388550016EC68 /* main.m */; };
 		070FAD241A0388550016EC68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070FAD1C1A0388550016EC68 /* ViewController.m */; };
 		070FAD251A0388550016EC68 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070FAD1D1A0388550016EC68 /* ViewController.xib */; };
 		070FAD2A1A03887C0016EC68 /* ZGCircleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 070FAD291A03887C0016EC68 /* ZGCircleScrollView.m */; };
+		F27030462C21576400F6DC3A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27030452C21576400F6DC3A /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +28,7 @@
 		070FAD1D1A0388550016EC68 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		070FAD281A03887C0016EC68 /* ZGCircleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGCircleScrollView.h; sourceTree = "<group>"; };
 		070FAD291A03887C0016EC68 /* ZGCircleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGCircleScrollView.m; sourceTree = "<group>"; };
+		F27030452C21576400F6DC3A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "CircleScrollViewDemo/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 			children = (
 				070FAD281A03887C0016EC68 /* ZGCircleScrollView.h */,
 				070FAD291A03887C0016EC68 /* ZGCircleScrollView.m */,
+				F27030452C21576400F6DC3A /* Launch Screen.storyboard */,
 			);
 			path = ZGCircleScrollView;
 			sourceTree = "<group>";
@@ -117,10 +119,11 @@
 				};
 			};
 			buildConfigurationList = 070FAC971A00D4170016EC68 /* Build configuration list for PBXProject "ZGCircleScrollViewDemo" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -139,7 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070FAD221A0388550016EC68 /* Info.plist in Resources */,
+				F27030462C21576400F6DC3A /* Launch Screen.storyboard in Resources */,
 				070FAD251A0388550016EC68 /* ViewController.xib in Resources */,
 				070FAD211A0388550016EC68 /* Images.xcassets in Resources */,
 			);
@@ -244,8 +247,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CircleScrollViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_NAME = ZGCircleScrollViewDemo;
 			};
 			name = Debug;
@@ -256,8 +262,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CircleScrollViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_NAME = ZGCircleScrollViewDemo;
 			};
 			name = Release;
